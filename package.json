@@ -1,24 +1,28 @@
 {
-  "name"       : "cote_test_app",
-  "version"    : "1.0.0",
-  "author"     : "Ivan Dimanov <npm@idimanov.com>",
+  "name": "cote_test_app",
+  "version": "1.0.0",
+  "author": "Ivan Dimanov <npm@idimanov.com>",
   "description": "I made this app just to play with cote.js lib",
-  "main"       : "chat-server.js",
-  "scripts"    : {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "main": "chat-server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "engines": {
     "node": ">= 5.5.0"
   },
   "dependencies": {
     "duplex-json-stream": "= 1.0.1",
-    "cote"              : "= 0.7.2"
+    "cote": "= 0.7.2",
+    "snyk": "^1.25.2"
   },
   "devDependencies": {
-    "eslint"              : "= 1.10.3",
+    "eslint": "= 1.10.3",
     "eslint-config-airbnb": "= 4.0.0",
-    "eslint-plugin-react" : "= 3.16.1"
+    "eslint-plugin-react": "= 3.16.1"
   },
   "readmeFilename": "readme.md",
-  "license"       : "MIT"
+  "license": "MIT",
+  "snyk": true
 }
