@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "duplex-json-stream": "= 1.0.1",
-    "cote": "= 0.14.1"
+    "cote": "= 0.16.2"
   },
   "devDependencies": {
     "eslint": "= 1.10.3",
